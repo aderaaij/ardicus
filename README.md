@@ -1,4 +1,4 @@
-# Amicus: your expert toolkit for rapid web prototyping
+# Ardicus: your expert toolkit for rapid web prototyping
 
 ## What is it?
 
