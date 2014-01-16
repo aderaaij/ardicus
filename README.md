@@ -2,7 +2,7 @@
 
 ## What is it?
 
-Ardicus is my interpretation of the [Amicus](https://github.com/nathos/amicus) Middleman template. It is designed as a barebone starting point for creating static sites / prototypes with the [Middleman](http://middlemanapp.com/) static site generator. It features [HTML5 Boilerplate](http://html5boilerplate.com/), [Haml](http://haml-lang.com/), [Sass](http://sass-lang.com/), [Compass](http://compass-style.org/), [Susy](http://susy.oddbird.net/) grid system, and lots of best practices.
+Ardicus is my interpretation of the [Amicus](https://github.com/nathos/amicus) Middleman template. It is designed as a barebone starting point for creating static sites / prototypes with the [Middleman app](http://middlemanapp.com/) static site generator. It features [HTML5 Boilerplate](http://html5boilerplate.com/), [Haml](http://haml-lang.com/), [Sass](http://sass-lang.com/), [Compass](http://compass-style.org/), [Susy](http://susy.oddbird.net/) grid system, and lots of best practices.
 
 ## How do I use it?
 
