@@ -20,20 +20,41 @@
 		-# Place favicon.ico and apple-touch-icon.png in the root directory
 
 		= stylesheet_link_tag "screen"
+		= stylesheet_link_tag "royalslider"
+		= stylesheet_link_tag "icons/style.css"
+		= stylesheet_link_tag "colorbox.css"
+		<script type="text/javascript" src="//use.typekit.net/buo0eep.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		= javascript_include_tag "libs/modernizr-2.7.1.min"
 
 	%body{:class => current_page.data.bodyclass}
 		/[if lt IE 7]
 			%p.chromeframe
 				You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.
-		.container
-			%header
-				%h1= current_page.data.title
-			#main-content{:role => "main"}
+		
+		%header.site-header
+			%ul.site-menu
+				%li.menu-item
+					%a{:href => "vw-days.html"} VW Days
+				%li.menu-item
+					%a{:href => "video.html"} Videos
+				%li.menu-item
+					%a{:href => "video-2.html"} Video 2
+				%li.menu-item
+					%a{:href => "http://facebook.com/clubgolfidf", :target => "_blank", "title" => "Club Golf IDF on Facebook"} Facebook
+				%li.menu-item
+					%a{:href => "http://clubgolfidf.tumblr.com/", :target => "_blank", "title" => "Club Golf IDF on Tumblr"} Tumblr
+				%li.menu-item
+					%a{:href => "mailto:info@clubgolfidf.com", "title" => "Club Golf IDF on Tumblr"} Contact
+			%a{:href => "/"}
+				%img.logo-sidebar{:src => "images/logo-sidebar@2x.png"}	
+		.menu-icon-wrap
+			.box-shadow-menu		
+		#main-content{:role => "main"}
 
-				-# Page content gets rendered here
-				= yield
-
+			-# Page content gets rendered here
+			= yield
+		/
 			%footer
 				%p &copy; #{copyright_years(2011)} Ardicus User
 
@@ -43,7 +64,7 @@
 
 		-# Holder.js - canvas-generated placeholder images for prototyping
 		= javascript_include_tag "libs/holder"
-
+		= javascript_include_tag "jquery.royalslider.min.js"
 		= javascript_include_tag "plugins", "script"
 
 		-# Google Analytics: change UA-XXXXX-X to be your site's ID.
