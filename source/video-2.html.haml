@@ -1,0 +1,35 @@
+---
+title:     Video - Club Golf IDF
+bodyclass: video-page
+---
+/
+	.container
+
+		.video-wrapper
+			.video-item
+				.video-bg-image{:style => "background-image:url(../images/2013.jpg)"}
+			.video-item
+				.video-bg-image{:style => "background-image:url(../images/2011.jpg)"}
+			.video-item
+				.video-bg-image{:style => "background-image:url(../images/2010.jpg)"}
+			.video-item
+				.video-bg-image{:style => "background-image:url(../images/2009.jpg)"}
+/
+	.video-bg-image{:style => "background-image:url(../images/2013.jpg)"}
+
+#video-gallery.royalSlider.videoGallery.rsDefault
+	%a.rsImg{:"data-rsVideo" => "http://vimeo.com/69077320", :href => "../images/2013.jpg" }
+		.rsTmb
+			%h5.video-title VW Days 2013
+	%a.rsImg{:"data-rsVideo" => "https://vimeo.com/45830194", :href => "http://b.vimeocdn.com/ts/319/715/319715493_640.jpg"}
+		.rsTmb
+			%h5.video-title VW Days 2011
+			
+	.rsContent
+		%a.rsImg{:"data-rsVideo" => "https://vimeo.com/31240369",:href => "http://b.vimeocdn.com/ts/210/393/210393954_640.jpg" }
+			.rsTmb
+				%h5.video-title VW Days 2010
+	%a.rsImg{:"data-rsVideo" => "https://vimeo.com/45830194", :href => "http://b.vimeocdn.com/ts/319/715/319715493_640.jpg"}
+		.rsTmb
+			%h5.video-title VW Days 2009
+				
