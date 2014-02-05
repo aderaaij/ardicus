@@ -2,37 +2,34 @@
 title:     Video - Club Golf IDF
 bodyclass: video-page
 ---
+/
+	.container
 
-.container
+		.video-wrapper
+			.video-item
+				.video-bg-image{:style => "background-image:url(../images/2013.jpg)"}
+			.video-item
+				.video-bg-image{:style => "background-image:url(../images/2011.jpg)"}
+			.video-item
+				.video-bg-image{:style => "background-image:url(../images/2010.jpg)"}
+			.video-item
+				.video-bg-image{:style => "background-image:url(../images/2009.jpg)"}
+/
+	.video-bg-image{:style => "background-image:url(../images/2013.jpg)"}
 
-	.video-wrapper
-		.video-item
-			.video-bg-image{:style => "background-image:url(../images/2013.jpg)"}
-			.video-item-overlay
-			.table-wrap
-				.table-cell
-					.video-play-button
-						%a.vimeo{:href => 'http://player.vimeo.com/video/69077320?byline=1&amp;portrait=1&amp;color=ffffff&amp;autoplay=1'}
-							%i.icon-play
-		.video-item
-			.video-bg-image{:style => "background-image:url(../images/2011.jpg)"}
-			.video-item-overlay
-			.table-wrap
-				.table-cell
-					.video-play-button
-						%i.icon-play
-		.video-item
-			.video-bg-image{:style => "background-image:url(../images/2010.jpg)"}
-			.video-item-overlay
-			.table-wrap
-				.table-cell
-					.video-play-button
-						%i.icon-play
-		.video-item
-			.video-bg-image{:style => "background-image:url(../images/2009.jpg)"}
-			.video-item-overlay
-			.table-wrap
-				.table-cell
-					.video-play-button
-						%i.icon-play
-						
+#video-gallery.royalSlider.videoGallery.rsDefault
+	%a.rsImg{:"data-rsVideo" => "http://vimeo.com/69077320", :href => "../images/2013.jpg" }
+		.rsTmb
+			%h5.video-title VW Days 2013
+	%a.rsImg{:"data-rsVideo" => "https://vimeo.com/69077318", :href => "../images/2011.jpg"}
+		.rsTmb
+			%h5.video-title VW Days 2011
+			
+	.rsContent
+		%a.rsImg{:"data-rsVideo" => "https://vimeo.com/69077319",:href => "../images/2010.jpg" }
+			.rsTmb
+				%h5.video-title VW Days 2010
+	%a.rsImg{:"data-rsVideo" => "https://vimeo.com/69077317", :href => "../images/2009.jpg"}
+		.rsTmb
+			%h5.video-title VW Days 2009
+				

@@ -23,8 +23,7 @@
 		= stylesheet_link_tag "royalslider"
 		= stylesheet_link_tag "icons/style.css"
 		= stylesheet_link_tag "colorbox.css"
-		<script type="text/javascript" src="//use.typekit.net/buo0eep.js"></script>
-		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
 		= javascript_include_tag "libs/modernizr-2.7.1.min"
 
 	%body{:class => current_page.data.bodyclass}
@@ -37,9 +36,7 @@
 				%li.menu-item
 					%a{:href => "vw-days.html"} VW Days
 				%li.menu-item
-					%a{:href => "video.html"} Videos
-				%li.menu-item
-					%a{:href => "video-2.html"} Video 2
+					%a{:href => "video.html"} Videos				
 				%li.menu-item
 					%a{:href => "http://facebook.com/clubgolfidf", :target => "_blank", "title" => "Club Golf IDF on Facebook"} Facebook
 				%li.menu-item

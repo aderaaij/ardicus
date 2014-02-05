@@ -10,7 +10,7 @@
 		width:100%;
 	}
 	.rsThumbsContainer {
-		margin-top:80px;
+		margin:30px 0 0;
 	}
 	.rsImg {
 
@@ -23,9 +23,9 @@
 		text-align: center;
 	}
 	.rsNav {
-		background-color:black;
 		
-		@include transition(all .3s ease);
+		
+		
 		
 	}
 	iframe {
@@ -61,9 +61,15 @@
 	top: 0;
 	height: auto;
 	width: 120px;
+	@include opacity(0);
+	visibility: hidden;
+	@include transition(all .1s ease .6s);
 }
 
-
+.loaded .rsDefault .rsThumbsVer {
+	opacity:1;
+	visibility: visible;
+}
 
 
 

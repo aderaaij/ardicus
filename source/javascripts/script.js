@@ -3,12 +3,13 @@
 */
 var activeMenu = false;
 jQuery(document).ready(function($) {
+	
 	$(window).load(function() {
-		$('body').waitForImages(function() {
-   
+		$('body').waitForImages(function() {   
 		   $('body').addClass('loaded');
 		});
 	});	
+	/* Royalslider video gallery */
 	$('#video-gallery').royalSlider({
 		arrowsNav: false,
 		fadeinLoadedSlide: true,
@@ -36,12 +37,11 @@ jQuery(document).ready(function($) {
 		//autoScaleSlider: true, 
 		//autoScaleSliderWidth: 960,     
 		//autoScaleSliderHeight: 450,
-
 		/* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
 		//imgWidth: 640,
 		//imgHeight: 360
-
   });
+	/* colorbox vimeo */
 	$(".vimeo").colorbox({
 		iframe: true,
 		initialWidth: 1400,
@@ -60,6 +60,7 @@ jQuery(document).ready(function($) {
 			});
 		}
 	});
+	/* Menu actions */
 	$('.menu-icon-wrap').click(function(){
 		if(!activeMenu) {
 	 		$('body').addClass('active-menu');

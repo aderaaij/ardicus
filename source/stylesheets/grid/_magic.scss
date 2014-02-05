@@ -62,9 +62,7 @@ $layouts: $break-tablet, $break-desktop, $break-huge;
 			@include omega;
 		}
 	}
-	.fifteen-wrap {
-		@include pad(2,2);
-	}
+	
 }
 
 @include at-breakpoint($break-huge) {
