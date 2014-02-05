@@ -1,0 +1,89 @@
+.vw-days-width {
+	width: 90%;
+	margin: 0 auto;
+	padding: 0 .5em;
+}
+
+.vw-days-page {
+	background-color: #000;
+	height: auto;
+	color: white;
+	padding-bottom: 4em;
+}
+	
+	.fifteen-wrap {
+		margin-bottom: 50px;
+	}
+		
+		.fifteen {
+			display: block;
+			width: 100%;
+			height: auto;	
+			margin: 0 auto;
+		}
+
+	.top-title {
+		@include rem(font-size,20px);
+		text-transform: uppercase;
+		display: block;
+		letter-spacing: 1px;
+		text-align: center;
+		margin: 40px 0 40px;
+		color: #ccc;
+	}
+
+	.article-text {
+		@include rem(font-size,16px);
+		p {
+			margin-top: 0;
+			text-align: justify;
+		}
+		a {
+			color: white;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+		.header-items {
+			list-style: none;
+			margin: 1.2em 0;
+			padding: 0;
+			text-transform: uppercase;
+			font-weight: 500;
+			color: #ccc;
+			@include rem(font-size,20px);
+		}
+
+		.text-title {
+			text-transform: uppercase;
+			margin-bottom: 0;
+			font-weight: 500;
+			@include rem(font-size,20px);
+		}
+		.text-fr {
+			color: #ccc;
+		}
+		.text-en {
+			color: #999;
+		}
+
+@include at-breakpoint($break-tablet) {
+	.vw-days-width {
+		width: 60%;
+		padding:0;
+	}
+}
+
+@include at-breakpoint($break-tablet) {
+	.vw-days-width {
+		width: 50%;
+	}
+}
+
+@include at-breakpoint($break-huge) {
+	.vw-days-width {
+		width: 45%;
+	}
+}
