@@ -19,7 +19,7 @@
 		list-style: none;
 		text-align: center;
 		text-transform: uppercase;
-		@include rem(font-size,14px);
+		@include rem(font-size,12px);
 	}
 		.menu-item {
 			line-height:2;
@@ -37,6 +37,7 @@
 		height:auto;
 		margin:80px auto 40px;
 	}
+	
 .menu-icon-wrap {
 	position:fixed;
 	top:4px;
@@ -46,26 +47,26 @@
 	width:32px;
 	height:21px;
 }
-.box-shadow-menu {
-	position: relative;
-	padding-left: 1.25em;
-	z-index:999;
-	font-size:2em;
-	cursor:pointer;
-}
+	.box-shadow-menu {
+		position: relative;
+		padding-left: 1.25em;
+		z-index:999;
+		font-size:2em;
+		cursor:pointer;
+	}
 
-.box-shadow-menu:before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0.25em;
-	width: 1em;
-	height: 0.15em;
-	background: white;
-	box-shadow: 
-    	0 0.25em 0 0 white,
-    	0 0.5em 0 0 white;
-}
+	.box-shadow-menu:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0.25em;
+		width: 1em;
+		height: 0.15em;
+		background: white;
+		box-shadow: 
+	    	0 0.25em 0 0 white,
+	    	0 0.5em 0 0 white;
+	}
 
 .active-menu {
 	.site-header {
