@@ -4,3 +4,9 @@
 // then the variable below would be 10px.
 // Used for the rem-calc mixin found in mixins/rem-calc.scss
 $baseline-px: 16px;
+
+$bodyFont: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headerFont:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$bodyFontWeight: 400;
+$headerfontWeight: 700;

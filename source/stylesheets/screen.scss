@@ -1,6 +1,22 @@
+// imports
 @import "compass";
+@import "susy";
 @import "compass/reset";
-@import "base/variables";
-@import "mixin/rem-calc";
+
+// variables
+@import "variables/type";
+
+// mixins
+@import "mixins/rem-calc";
+
+// base
 @import "base/grid-settings";
 @import "base/base";
+
+// layout
+
+// modules
+
+// state
+
+// theme
