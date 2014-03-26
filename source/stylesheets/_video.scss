@@ -1,0 +1,84 @@
+/* Video page body class */ 
+
+.video-page {
+	.site-menu {
+		visibility: hidden;
+	}
+}
+
+.video-wrapper {	
+	@include clearfix;
+	height:100%;
+	//padding:5px;
+	width:100%;
+}
+
+.container {
+	height:100%;
+}
+
+	.video-item {
+		height:50%;
+		position:relative;
+		//margin-bottom:4px;
+		background-color:#000;
+		&:hover {
+			.video-bg-image {
+				@include opacity(1);				
+			}
+			.video-item-overlay {
+				background-color: rgba(0,0,0,0);
+			}
+			.video-play-button {
+				@include opacity(1);
+			}
+		}
+		.table-wrap {
+			position:absolute;
+			top:0;
+			left:0;
+			z-index:11;
+			text-align: center;
+		}
+		.table-cell {}
+	}
+		.video-bg-image {
+			@include background-size(cover);
+			background-position: center;
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			z-index:10;		
+		}
+
+		.video-item-overlay {
+			width:100%;
+			height:100%;
+			background-color:black;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index:11;
+			background-color:rgba(0,0,0,.4);
+			@include transition(all .3s ease);
+		}
+
+		.video-play-button {
+			background-color:black;
+			text-align: center;
+			margin:0 auto;
+			width:48px;
+			height:48px;
+			padding-top:7px;
+			padding-left:2px;
+			z-index:11;
+			cursor:pointer;
+			@include opacity(.4);
+			@include transition(opacity .3s ease);
+			.icon-play {
+				color:white;
+				@include rem(font-size,32px);
+			}
+		}
