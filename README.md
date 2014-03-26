@@ -1,4 +1,4 @@
-Ardicus
+Ardicus Middleman template
 =================
 
 A spartan theme for [Middleman](http://middlemanapp.com/) static site generator containing next to nothing
@@ -28,3 +28,7 @@ CD into the folder and give the magic ```bundle install``` command  to install a
 Use ```bundle exec middleman``` for development and ```bundle exec middleman build``` to render your static file output to the ```/build/``` directory.
 
 For all the Middleman tips and tricks, check the [Middleman website](http://middlemanapp.com/).
+
+## Credits
+
+The configuration (and name) of this template are heavily inspired by [Nathan Henderson's](https://github.com/nathos) [Amicus Middleman template](https://github.com/nathos/amicus)
