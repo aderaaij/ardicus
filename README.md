@@ -15,7 +15,7 @@ A spartan theme for [Middleman](http://middlemanapp.com/) static site generator 
 gem install bundler
 ```
 
-1. Clone or download this mofo into a local folder:
+1.Clone or download this mofo into a local folder:
 
 ```
 git clone https://github.com/aderaaij/ardicus.git lets_boogie
