@@ -123,3 +123,4 @@ DEPENDENCIES
   middleman-favicon-maker
   middleman-livereload
   susy (~> 2)
+  wdm (~> 0.1.0)
