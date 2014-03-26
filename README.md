@@ -5,9 +5,9 @@ A spartan theme for [Middleman](http://middlemanapp.com/) static site generator 
 
 Contains:
   * Sass / Compass
-  * Susy 2 grid system
-  * Breakpoint Sass media queries
-  * Folder set up according to [SMACSS]{http://smacss.com} principles
+  * [Susy 2](http://susy.oddbird.net/) grid system
+  * [Breakpoint](http://breakpoint-sass.com/) Sass media queries
+  * Folder set up according to [SMACSS](http://smacss.com) principles
 
 ## Install
 
