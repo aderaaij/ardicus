@@ -1,0 +1,4 @@
+.l-container {
+	@include layout($default-map);
+	@include container(12 show);
+}
