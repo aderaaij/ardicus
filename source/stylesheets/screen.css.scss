@@ -1,40 +1,86 @@
-
 @import "base";
 
-/* :: Main Styesheet */
-/* ------------------------------------------------------------ */
+$textfont: "lato","freight-sans-pro", "prenton", sans-serif; 
+$headerfont: "lato", "prenton", "freight-sans-pro", helvetica, arial, sans-serif;
 
 /* :: General */
 /* ------------------------------------------------------------ */
 
-h1 {
-	color: #999;
-	text-transform: uppercase;
-	line-height: 1em;
+html,body {
+	height:100%;	
 }
 
-h2 {
-	line-height: 1.3em; 
+body {
+	font-family:$textfont;
+	font-weight:300;
+	background-color:white;
 }
 
-kbd {
-	background-color: #f5f5f5;
-	border: 1px solid #dedede;
-	padding: 0px 3px 2px;
+a {
+	text-decoration: none;
 }
 
-footer {
-	margin-top: 3em;
-	text-align: right;
+h1,h2,h3,h4,h5,h6 {
+	font-weight:300;
 }
 
-.container {
-	// Force images to scale down to their container widths.
-	img {
-		max-width: 100%;
-		height: auto;
+/* :: Navigation bar */
+/* ------------------------------------------------------------ */
+
+@import "header";
+
+
+.video-header {
+	display:block;
+}
+/* :: Loaded stuff */
+/* ------------------------------------------------------------ */
+
+.loaded {
+	.site-header {
+		@include transition(transform .2s $easeOutSine .4s);
+	}
+	.bg-image-01 {
+		@include opacity(1);
+		-webkit-transform: translate3d(0,0,0);
+	}
+	.logo {
+		-webkit-transform: translate3d(0,0,0);
+		@include opacity(1);
+	}
+}	
+@include at-breakpoint($break-desktop) {
+	.loaded .site-header {
+		-webkit-transform: translate3d(0,0,0);
+		-moz-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+	.menu-icon-wrap {
+		display: none;
 	}
 }
+/* :: Structure stuff */
+/* ------------------------------------------------------------ */	
+
+#main-content {
+	height:100%;
+	width:100%;
+	@include transition(transform .2s $easeOutSine);
+}
+
+/* :: Home */
+/* ------------------------------------------------------------ */
+
+@import "home";
+
+@import "vwdays";
+
+/* :: Video */
+/* ------------------------------------------------------------ */
+
+@import "video";
+
+@import "royalslider-video";
 
 // H5BP helper classes & mixins.
 // @include h5bp-helpers

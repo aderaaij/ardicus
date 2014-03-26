@@ -6,3 +6,5 @@
 // HTML5 Boilerplate styling for Chrome Frame
 @include h5bp-chromeframe;
 @import "grid/magic";
+@import "libs/ceaser-easings";
+@include border-box-sizing;
