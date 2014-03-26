@@ -1,0 +1,9 @@
+source 'https://rubygems.org'
+
+# Compass plugins
+gem 'susy', "~> 2" # Susy
+gem 'breakpoint'
+gem "middleman", "~> 3.2"
+# Live-reloading plugin
+gem "middleman-livereload"
+gem "middleman-favicon-maker"
