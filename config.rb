@@ -1,6 +1,7 @@
-# Plugins
+# required plugins
 require 'susy'
 require 'breakpoint'
+require 'normalize-scss'
 
 # Change Compass configuration
 compass_config do |config|
@@ -10,7 +11,7 @@ end
 # Reload the browser automatically whenever files change
 activate :livereload, :host => '127.0.0.1'
 
-#haml
+# haml
 
 # CodeRay syntax highlighting in Haml
 # First: gem install haml-coderay

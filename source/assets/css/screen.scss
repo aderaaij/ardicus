@@ -1,7 +1,7 @@
 // imports
-@import "compass";
 @import "susy";
-@import "compass/reset";
+@import "breakpoint";
+@import "normalize";
 
 // variables
 @import "variables/type";
@@ -12,9 +12,6 @@
 // base
 @import "base/grid-settings";
 @import "base/base";
-
-// layout
-@import "layout/l-container";
 
 // modules
 
