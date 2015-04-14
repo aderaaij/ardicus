@@ -1,18 +1,20 @@
 source 'https://rubygems.org'
 
-gem "middleman", "~> 3.2"
-gem "middleman-livereload"
-gem "middleman-favicon-maker"
+gem 'middleman', '~> 3'
+gem 'middleman-livereload'
+gem 'middleman-favicon-maker'
+gem 'normalize-scss', '~> 3'
+gem 'haml-coderay'
 # gem "middleman-deploy"
 
 # Compass plugins
-gem 'susy', "~> 2" # Susy
+gem 'susy', '~> 2' # Susy
 gem 'breakpoint'
 
 # Font Awesome icons
 # gem "font-awesome-middleman", "~> 4.0.3"
 
 ### Windows specific gems ###
-platforms :mswin, :mingw do
-   gem "wdm", "~> 0.1.0" # Windows Directory Monitor
-end
+# platforms :mswin, :mingw do
+#    gem "wdm", "~> 0.1.0" # Windows Directory Monitor
+# end
